@@ -17,8 +17,8 @@ bootloader --location=mbr --driveorder=sda
 
 # Create Physical Partition
 part /boot --size=512 --asprimary --ondrive=sda --fstype=xfs
-part swap --size=2048 --ondrive=sda
-part / --size=8192 --grow --asprimary --ondrive=sda --fstype=xfs
+part swap --size=2048 --ondrive=sda 
+part / --size=8192 --grow --asprimary --ondrive=sda --fstype=xfs 
 
 # Remove all existing partitions
 clearpart --all --drives=sda
@@ -42,7 +42,7 @@ xconfig --startxonboot
 timezone Australia/Sydney
 
 # Create User Account
-user --name=user --password=123 --groups=wheel
+user --name=sina --password=qwerty --groups=wheel
 
 # Set Root Password
 rootpw --lock
@@ -58,30 +58,26 @@ text
 @base-x
 @firefox
 @fonts
-@libreoffice
-@multimedia
+
+
 @networkmanager-submodules
-@printing
+
 @xfce-desktop
-@development-tools
+
 vim
 NetworkManager-openvpn-gnome
 keepassx
 redshift-gtk
-gimp
-gnucash
-duplicity
-calibre
-irssi
+
+
 nmap
 tcpdump
 ansible
-thunderbird
+
 vlc
-calc
-gitflow
-gstreamer-plugins-ugly
-gstreamer1-plugins-ugly
+
+
+
 redhat-rpm-config
 rpmconf
 strace
@@ -91,34 +87,22 @@ system-config-printer
 git-review
 gcc-c++
 readline-devel
-gcc-gfortran
-libX11-devel
-libXt-devel
-zlib-devel
-bzip2-devel
-xz-devel
-pcre-devel
-libcurl-devel
+
+
 python3-virtualenvwrapper
-python3-devel
-golang
-libimobiledevice
-libimobiledevice-utils
+
+
 usbmuxd
 ifuse
-mariadb-server
-transmission-gtk
-libffi-devel
-evince
-sqlite
+
+
+
 exfat-utils
 fuse-exfat
 jq
-nodejs
+
 icedtea-web
-ristretto
-argon2
-xournal
+docker
 %end
 
 # Post-installation Script
