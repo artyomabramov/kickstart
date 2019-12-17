@@ -42,7 +42,7 @@ xconfig --startxonboot
 timezone Australia/Sydney
 
 # Create User Account
-user --name=sina --password=$userpass --iscrypted --groups=wheel
+user --name=user --password=123 --iscrypted --groups=wheel
 
 # Set Root Password
 rootpw --lock
