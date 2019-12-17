@@ -42,7 +42,7 @@ xconfig --startxonboot
 timezone Australia/Sydney
 
 # Create User Account
-user --name=user --password=123 --iscrypted --groups=wheel
+user --name=user --password=123 --groups=wheel
 
 # Set Root Password
 rootpw --lock
