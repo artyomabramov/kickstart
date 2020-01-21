@@ -61,32 +61,25 @@ text
 @xfce-desktop
 vim
 NetworkManager-openvpn-gnome
-# keepassx
 redshift-gtk
 nmap
 tcpdump
 ansible
-# vlc
 redhat-rpm-config
 rpmconf
 strace
-# wireshark
-# ffmpeg
-# system-config-printer
 git-review
 gcc-c++
 readline-devel
 python3-virtualenvwrapper
 usbmuxd
 ifuse
-# exfat-utils
-# fuse-exfat
 jq
 icedtea-web
 docker
 %end
 
-#docker
+# Docker
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo curl -o /usr/bin/containers.sh https://raw.githubusercontent.com/artyomabramov/kickstart/master/containers.sh
